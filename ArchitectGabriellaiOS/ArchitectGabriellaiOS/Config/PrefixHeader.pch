@@ -13,21 +13,10 @@
 #import"BaseViewController.h"
 
 
-
-//
-//  ConstantDefinition.h
-//  GabriellaXia
-//
-//  Created by Gabriella on 2016/10/19.
-//  Copyright © 2016年 Gabriella. All rights reserved.
-//
-
-#ifndef ConstantDefinition_h
-#define ConstantDefinition_h
 #define PAY_WXPAY @"wxpay"
 
 
-//  放常数
+# pragma mark ************* constant
 #define mainScreemHeight [UIScreen mainScreen].bounds.size.height
 #define mainScreemWidth [UIScreen mainScreen].bounds.size.width
 
@@ -36,6 +25,9 @@
 #define net @"wifi"
 #define resolution @"750x1334"
 #define device_ @"bc8009d033507ffc7c377adf82b8afd8b3a3aded2fab34bb047cbedc56b90631"
+
+
+#pragma mark ************* net
 #define response_language @"zh-CN"
 #define tokenn @"8af91bad552310ba6013d794e0721128"
 #define  tirgge @"user"
@@ -45,7 +37,6 @@
 #define cursor  @"0"
 #define show_all @"1"
 #define target_user_id	 @"2599645"
-
 #define  baseApi   @"http://www.mofunenglish.com/"
 #define api3  @"api3/"
 #define user @"user/"
