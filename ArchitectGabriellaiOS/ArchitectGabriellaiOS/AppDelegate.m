@@ -1,12 +1,13 @@
 //
 //  AppDelegate.m
-//  ArchitectGabriellaiOS
+//  Architect_Gabriella_iOS
 //
-//  Created by Gabriella on 2017/6/1.
+//  Created by Gabriella on 2017/5/27.
 //  Copyright © 2017年 Gabriella. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "Manage_RootWindow.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+
+    self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor=[UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+
+   Manage_RootWindow *manageWindow= [Manage_RootWindow  sharedInstance];
+    self.window.rootViewController=[manageWindow getRootVC];
+    
+
     return YES;
 }
 
