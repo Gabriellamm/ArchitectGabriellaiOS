@@ -13,12 +13,12 @@
 #import"BaseViewController.h"
 
 
-#define PAY_WXPAY @"wxpay"
-
 
 # pragma mark ************* constant
 #define mainScreemHeight [UIScreen mainScreen].bounds.size.height
 #define mainScreemWidth [UIScreen mainScreen].bounds.size.width
+
+#define PAY_WXPAY @"wxpay"
 
 #define carrier @"中国联通"
 #define dbrand @"iPhone"
@@ -64,4 +64,3 @@
  */
 
 
-#endif /* PrefixHeader_pch */

@@ -13,12 +13,13 @@
 		987F20B11EDF243A00AA0A48 /* ArchitectGabriellaiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F20B01EDF243A00AA0A48 /* ArchitectGabriellaiOSTests.m */; };
 		987F20BC1EDF243A00AA0A48 /* ArchitectGabriellaiOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F20BB1EDF243A00AA0A48 /* ArchitectGabriellaiOSUITests.m */; };
 		987F20F51EDF253400AA0A48 /* Manage_RootWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F20CD1EDF253400AA0A48 /* Manage_RootWindow.m */; };
-		987F20F61EDF253400AA0A48 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F20D01EDF253400AA0A48 /* MainViewController.m */; };
 		987F20F71EDF253400AA0A48 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F20D31EDF253400AA0A48 /* BaseCollectionViewCell.m */; };
 		987F20F81EDF253400AA0A48 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F20D51EDF253400AA0A48 /* BaseModel.m */; };
 		987F20F91EDF253400AA0A48 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F20D71EDF253400AA0A48 /* BaseViewController.m */; };
 		987F20FA1EDF253400AA0A48 /* TableViewController_Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F20D91EDF253400AA0A48 /* TableViewController_Base.m */; };
 		987F21041EDF25CD00AA0A48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F21031EDF25CD00AA0A48 /* AppDelegate.m */; };
+		987F21171EDF318900AA0A48 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F21161EDF318900AA0A48 /* MainViewController.m */; };
+		C8E34034A9BD65AC1B3B40E6 /* Pods_ArchitectGabriellaiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293AB83FEB1F1E7FF7EAC923 /* Pods_ArchitectGabriellaiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		293AB83FEB1F1E7FF7EAC923 /* Pods_ArchitectGabriellaiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArchitectGabriellaiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6889945D1DA8BA2D55A92515 /* Pods-ArchitectGabriellaiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectGabriellaiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitectGabriellaiOS/Pods-ArchitectGabriellaiOS.release.xcconfig"; sourceTree = "<group>"; };
 		987F20931EDF243A00AA0A48 /* ArchitectGabriellaiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchitectGabriellaiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		987F20971EDF243A00AA0A48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		987F20991EDF243A00AA0A48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,8 +56,6 @@
 		987F20BD1EDF243A00AA0A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		987F20CC1EDF253400AA0A48 /* Manage_RootWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manage_RootWindow.h; sourceTree = "<group>"; };
 		987F20CD1EDF253400AA0A48 /* Manage_RootWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manage_RootWindow.m; sourceTree = "<group>"; };
-		987F20CF1EDF253400AA0A48 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		987F20D01EDF253400AA0A48 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		987F20D21EDF253400AA0A48 /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
 		987F20D31EDF253400AA0A48 /* BaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewCell.m; sourceTree = "<group>"; };
 		987F20D41EDF253400AA0A48 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -70,6 +71,9 @@
 		987F21121EDF285000AA0A48 /* MapFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapFactory.h; sourceTree = "<group>"; };
 		987F21131EDF286300AA0A48 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
 		987F21141EDF287700AA0A48 /* MapEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapEngine.h; sourceTree = "<group>"; };
+		987F21151EDF318900AA0A48 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		987F21161EDF318900AA0A48 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		D30FFBF62EC434AA7C10BD2F /* Pods-ArchitectGabriellaiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectGabriellaiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitectGabriellaiOS/Pods-ArchitectGabriellaiOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E34034A9BD65AC1B3B40E6 /* Pods_ArchitectGabriellaiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +102,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D31B17EF389C0D959C47D37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				293AB83FEB1F1E7FF7EAC923 /* Pods_ArchitectGabriellaiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C2192FF16B6F19CC8D2142B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D30FFBF62EC434AA7C10BD2F /* Pods-ArchitectGabriellaiOS.debug.xcconfig */,
+				6889945D1DA8BA2D55A92515 /* Pods-ArchitectGabriellaiOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		987F208A1EDF243A00AA0A48 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +126,8 @@
 				987F20AF1EDF243A00AA0A48 /* ArchitectGabriellaiOSTests */,
 				987F20BA1EDF243A00AA0A48 /* ArchitectGabriellaiOSUITests */,
 				987F20941EDF243A00AA0A48 /* Products */,
+				8C2192FF16B6F19CC8D2142B /* Pods */,
+				0D31B17EF389C0D959C47D37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,7 +146,6 @@
 			children = (
 				987F20991EDF243A00AA0A48 /* AppDelegate.h */,
 				987F21031EDF25CD00AA0A48 /* AppDelegate.m */,
-				987F210A1EDF274800AA0A48 /* Test */,
 				987F21051EDF273C00AA0A48 /* Main1 */,
 				987F21061EDF273C00AA0A48 /* Main2 */,
 				987F21071EDF273C00AA0A48 /* Main3 */,
@@ -133,6 +156,7 @@
 				987F20DA1EDF253400AA0A48 /* Class */,
 				987F20F01EDF253400AA0A48 /* Config */,
 				987F20F41EDF253400AA0A48 /* Function */,
+				987F210A1EDF274800AA0A48 /* Test */,
 				987F20A21EDF243A00AA0A48 /* Assets.xcassets */,
 				987F20A41EDF243A00AA0A48 /* LaunchScreen.storyboard */,
 				987F20A71EDF243A00AA0A48 /* Info.plist */,
@@ -196,8 +220,6 @@
 		987F20CE1EDF253400AA0A48 /* V */ = {
 			isa = PBXGroup;
 			children = (
-				987F20CF1EDF253400AA0A48 /* MainViewController.h */,
-				987F20D01EDF253400AA0A48 /* MainViewController.m */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -417,6 +439,8 @@
 		987F21051EDF273C00AA0A48 /* Main1 */ = {
 			isa = PBXGroup;
 			children = (
+				987F21151EDF318900AA0A48 /* MainViewController.h */,
+				987F21161EDF318900AA0A48 /* MainViewController.m */,
 			);
 			path = Main1;
 			sourceTree = "<group>";
@@ -517,9 +541,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 987F20C01EDF243A00AA0A48 /* Build configuration list for PBXNativeTarget "ArchitectGabriellaiOS" */;
 			buildPhases = (
+				1D3DEA74DB2F1D256B431C5E /* [CP] Check Pods Manifest.lock */,
 				987F208F1EDF243A00AA0A48 /* Sources */,
 				987F20901EDF243A00AA0A48 /* Frameworks */,
 				987F20911EDF243A00AA0A48 /* Resources */,
+				76FD678D51BA588F0D66B856 /* [CP] Embed Pods Frameworks */,
+				1D358E5EEA2BC8EE8C43C2D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -640,6 +667,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D358E5EEA2BC8EE8C43C2D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArchitectGabriellaiOS/Pods-ArchitectGabriellaiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D3DEA74DB2F1D256B431C5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		76FD678D51BA588F0D66B856 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArchitectGabriellaiOS/Pods-ArchitectGabriellaiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		987F208F1EDF243A00AA0A48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -648,11 +723,11 @@
 				987F20F81EDF253400AA0A48 /* BaseModel.m in Sources */,
 				987F20F51EDF253400AA0A48 /* Manage_RootWindow.m in Sources */,
 				987F20981EDF243A00AA0A48 /* main.m in Sources */,
+				987F21171EDF318900AA0A48 /* MainViewController.m in Sources */,
 				987F20F71EDF253400AA0A48 /* BaseCollectionViewCell.m in Sources */,
 				987F21041EDF25CD00AA0A48 /* AppDelegate.m in Sources */,
 				987F20F91EDF253400AA0A48 /* BaseViewController.m in Sources */,
 				987F20FA1EDF253400AA0A48 /* TableViewController_Base.m in Sources */,
-				987F20F61EDF253400AA0A48 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,9 +868,11 @@
 		};
 		987F20C11EDF243A00AA0A48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D30FFBF62EC434AA7C10BD2F /* Pods-ArchitectGabriellaiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2K95DZB4A9;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ArchitectGabriellaiOS/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = ArchitectGabriellaiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -806,9 +883,11 @@
 		};
 		987F20C21EDF243A00AA0A48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6889945D1DA8BA2D55A92515 /* Pods-ArchitectGabriellaiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2K95DZB4A9;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ArchitectGabriellaiOS/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = ArchitectGabriellaiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -886,6 +965,7 @@
 				987F20C21EDF243A00AA0A48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		987F20C31EDF243A00AA0A48 /* Build configuration list for PBXNativeTarget "ArchitectGabriellaiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -894,6 +974,7 @@
 				987F20C51EDF243A00AA0A48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		987F20C61EDF243A00AA0A48 /* Build configuration list for PBXNativeTarget "ArchitectGabriellaiOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -902,6 +983,7 @@
 				987F20C81EDF243A00AA0A48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
