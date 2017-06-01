@@ -19,10 +19,12 @@
 static Manage_RootWindow* Instance = nil;
 
 +(instancetype)sharedInstance{
-    static dispatch_once_t once;
-    dispatch_once(&once, ^{
-        Instance = [[Manage_RootWindow alloc] init];
-    });
+    if(Instance == nil){
+        static dispatch_once_t once;
+        dispatch_once(&once, ^{
+            Instance = [[super alloc]init];
+        });
+    }
     return Instance;
 }
 
@@ -31,33 +33,35 @@ static Manage_RootWindow* Instance = nil;
     if(Instance == nil){
         static dispatch_once_t once;
         dispatch_once(&once, ^{
-            Instance = [super allocWithZone:zone];
-        });
+        Instance = [super allocWithZone:zone];
+            });
     }
     return Instance;
 }
 
 
 -(UIViewController *)getRootVC{
-//第一次运行软件
+    //第一次运行软件
     // 没有登陆
     // 已经登陆
 NSDictionary *loginStatus =@{@"Login":@"MainViewController",};
 
 //1、进行判断 并且保存
-  _currentLoginStatuc= [[NSUserDefaults standardUserDefaults] objectForKey:CurrentLoginStatuc];
+  _currentLoginStatuc = [[NSUserDefaults standardUserDefaults] objectForKey:CurrentLoginStatuc];
 
     if (_currentLoginStatuc==nil) {
         [[NSUserDefaults standardUserDefaults] setObject:@"Login" forKey:CurrentLoginStatuc];
         [[NSUserDefaults standardUserDefaults]synchronize];
     }
 
-  _currentLoginStatuc= [[NSUserDefaults standardUserDefaults] objectForKey:CurrentLoginStatuc];
+  _currentLoginStatuc = [[NSUserDefaults standardUserDefaults] objectForKey:CurrentLoginStatuc];
     _currentLoginStatuc=[loginStatus objectForKey:_currentLoginStatuc];
-  id objct= [[NSClassFromString(_currentLoginStatuc) alloc]init];
+
+
+  id objct            = [[NSClassFromString(@"MainViewController") alloc]init];
 
     return objct;
 
-    
+
 }
 @end

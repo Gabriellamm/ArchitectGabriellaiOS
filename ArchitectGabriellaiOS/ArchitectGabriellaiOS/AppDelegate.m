@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Manage_RootWindow.h"
+#import "MainViewController.h"
 
 @interface AppDelegate ()
 
@@ -24,8 +25,8 @@
     [self.window makeKeyAndVisible];
 
    Manage_RootWindow *manageWindow= [Manage_RootWindow  sharedInstance];
-    self.window.rootViewController=[manageWindow getRootVC];
-    
+   self.window.rootViewController=[manageWindow getRootVC];
+
 
     return YES;
 }

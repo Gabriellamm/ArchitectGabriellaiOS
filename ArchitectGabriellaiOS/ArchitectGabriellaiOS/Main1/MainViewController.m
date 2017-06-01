@@ -12,10 +12,9 @@
 #import "MapView.h"
 #import "MapEngine.h"
 
-
-
 @interface MainViewController ()
 @property (nonatomic,strong)UIButton *PayButton;
+@property (nonatomic,strong)UIView *blueView;
 @end
 
 @implementation MainViewController
@@ -25,16 +24,101 @@
     [self unionPay];  
     [self getMap];
 
+    [self LoadMoreImage];
 
 }
 
 
+#pragma mark ************* Masonry
+-(void)LoadMoreImage{
+
+    UIView *view1 = [[UIView alloc]init];
+
+    view1.backgroundColor = [UIColor greenColor];
+
+    [self.view addSubview:view1];
+
+    UIEdgeInsets padding = UIEdgeInsetsMake(150, 30, 30, 30);
+
+    [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.mas_top).with.offset(padding.top);
+        make.left.equalTo(self.view.mas_left).with.offset(padding.left);
+        make.bottom.equalTo(self.view.mas_bottom).with.offset(-padding.bottom);
+        make.right.equalTo(self.view.mas_right).with.offset(-padding.right);
+    }];
+
+
+//    [topInnerView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.right.mas_equalTo(0);
+//        make.width.mas_equalTo(topInnerView.mas_height).multipliedBy(3);
+//        make.center.mas_equalTo(topView);
+//    }];
+
+    // 一句代码代替上面的多行
+    //    [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
+    //        make.edges.equalTo(self.view).with.insets(UIEdgeInsetsMake(150, 30, 30, 30));
+    //    }];
+
+
+
+
+//    // 红色View
+//    UIView *redView = [[UIView alloc]init];
+//    redView.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:redView];
+//
+//    // 蓝色View
+//    self.blueView = [[UIView alloc]init];
+//    self.blueView.backgroundColor = [UIColor blueColor];
+//    [self.view addSubview:self.blueView];
+//
+//    // 黄色View
+//    UIView *yellowView = [[UIView alloc]init];
+//    yellowView.backgroundColor = [UIColor yellowColor];
+//    [self.view addSubview:yellowView];
+//
+//    // ---红色View--- 添加约束
+//    [redView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(self.view.mas_left).with.offset(20);
+//        make.bottom.mas_equalTo(self.view.mas_bottom).with.offset(-80);
+//        make.height.equalTo([NSNumber numberWithInt:50]);
+//    }];
+//
+//    // ---蓝色View--- 添加约束
+//    [self.blueView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(redView.mas_right).with.offset(40);
+//        make.bottom.width.height.mas_equalTo(redView);
+//    }];
+//
+//    // ---黄色View--- 添加约束
+//    [yellowView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(self.blueView.mas_right).with.offset(40);
+//        make.right.mas_equalTo(self.view.mas_right).with.offset(-20);
+//        make.bottom.width.height.mas_equalTo(redView);
+//
+//        // 优先级设置为250，最高1000（默认）
+//        make.left.mas_equalTo(redView.mas_right).with.offset(20).priority(250);
+//    }];
+
+
+
+
+}
+
+//    删除约束
+
+- (NSArray*)remakeConstraints:(void(^)(MASConstraintMaker *))block {
+    return [_blueView mas_remakeConstraints:block];
+}
+
+#pragma mark ************* Map
 -(void)getMap{
 //    id<MapFactory> factory=[[MapEngine sharedInstance] getMapFactory];
 //    id <MapView> mapView=[factory getMapViewWithFrame:self.view.frame];
 //    UIView *map=[mapView getMap];
 //    [self.view addSubview:map];
 }
+#pragma mark ************* Pay
 -(void)unionPay{
 //    CGFloat buttonWidth=mainScreemWidth/5;
 //    CGFloat buttonHeight=mainScreemHeight/10;

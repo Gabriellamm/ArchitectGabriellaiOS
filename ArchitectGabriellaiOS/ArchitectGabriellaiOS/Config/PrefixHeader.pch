@@ -12,7 +12,10 @@
 #import "ConstantDefinition.h"
 #import"BaseViewController.h"
 
-
+#pragma mark ************* Tool
+#define MAS_SHORTHAND_GLOBALS
+#define MAS_SHORTHAND
+#import "Masonry.h"
 
 # pragma mark ************* constant
 #define mainScreemHeight [UIScreen mainScreen].bounds.size.height
