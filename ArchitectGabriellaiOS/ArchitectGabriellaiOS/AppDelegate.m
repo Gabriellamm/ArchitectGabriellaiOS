@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "Manage_RootWindow.h"
+#import "AbsEnterObject.h"
 #import "MainViewController.h"
 
 @interface AppDelegate ()
@@ -24,8 +24,8 @@
     self.window.backgroundColor=[UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
-   Manage_RootWindow *manageWindow= [Manage_RootWindow  sharedInstance];
-   self.window.rootViewController=[manageWindow getRootVC];
+   AbsEnterObject *enterOject= [AbsEnterObject  sharedInstance];
+   self.window.rootViewController=[enterOject resposeEnter];
 
 
     return YES;

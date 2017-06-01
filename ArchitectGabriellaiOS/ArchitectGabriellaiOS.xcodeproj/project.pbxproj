@@ -21,6 +21,10 @@
 		987F21171EDF318900AA0A48 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F21161EDF318900AA0A48 /* MainViewController.m */; };
 		987F211A1EDF417C00AA0A48 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F21191EDF417C00AA0A48 /* TableViewController.m */; };
 		987F211D1EDF43A000AA0A48 /* MoreCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F211C1EDF43A000AA0A48 /* MoreCollectionViewController.m */; };
+		98EE67801EE0033900FBC9C2 /* LunchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EE677F1EE0033900FBC9C2 /* LunchVC.m */; };
+		98EE67831EE003D600FBC9C2 /* LogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EE67821EE003D600FBC9C2 /* LogVC.m */; };
+		98EE67861EE003EA00FBC9C2 /* RigisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EE67851EE003EA00FBC9C2 /* RigisterVC.m */; };
+		98EE67891EE007D100FBC9C2 /* AbsEnterObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EE67881EE007D100FBC9C2 /* AbsEnterObject.m */; };
 		C8E34034A9BD65AC1B3B40E6 /* Pods_ArchitectGabriellaiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293AB83FEB1F1E7FF7EAC923 /* Pods_ArchitectGabriellaiOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +83,14 @@
 		987F21191EDF417C00AA0A48 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		987F211B1EDF43A000AA0A48 /* MoreCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCollectionViewController.h; sourceTree = "<group>"; };
 		987F211C1EDF43A000AA0A48 /* MoreCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreCollectionViewController.m; sourceTree = "<group>"; };
+		98EE677E1EE0033900FBC9C2 /* LunchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LunchVC.h; sourceTree = "<group>"; };
+		98EE677F1EE0033900FBC9C2 /* LunchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LunchVC.m; sourceTree = "<group>"; };
+		98EE67811EE003D600FBC9C2 /* LogVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogVC.h; sourceTree = "<group>"; };
+		98EE67821EE003D600FBC9C2 /* LogVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogVC.m; sourceTree = "<group>"; };
+		98EE67841EE003EA00FBC9C2 /* RigisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RigisterVC.h; sourceTree = "<group>"; };
+		98EE67851EE003EA00FBC9C2 /* RigisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RigisterVC.m; sourceTree = "<group>"; };
+		98EE67871EE007D100FBC9C2 /* AbsEnterObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbsEnterObject.h; sourceTree = "<group>"; };
+		98EE67881EE007D100FBC9C2 /* AbsEnterObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbsEnterObject.m; sourceTree = "<group>"; };
 		D30FFBF62EC434AA7C10BD2F /* Pods-ArchitectGabriellaiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectGabriellaiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitectGabriellaiOS/Pods-ArchitectGabriellaiOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,6 +231,8 @@
 			children = (
 				987F20CC1EDF253400AA0A48 /* Manage_RootWindow.h */,
 				987F20CD1EDF253400AA0A48 /* Manage_RootWindow.m */,
+				98EE67871EE007D100FBC9C2 /* AbsEnterObject.h */,
+				98EE67881EE007D100FBC9C2 /* AbsEnterObject.m */,
 			);
 			path = P;
 			sourceTree = "<group>";
@@ -226,6 +240,12 @@
 		987F20CE1EDF253400AA0A48 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				98EE677E1EE0033900FBC9C2 /* LunchVC.h */,
+				98EE677F1EE0033900FBC9C2 /* LunchVC.m */,
+				98EE67811EE003D600FBC9C2 /* LogVC.h */,
+				98EE67821EE003D600FBC9C2 /* LogVC.m */,
+				98EE67841EE003EA00FBC9C2 /* RigisterVC.h */,
+				98EE67851EE003EA00FBC9C2 /* RigisterVC.m */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -732,13 +752,17 @@
 			files = (
 				987F20F81EDF253400AA0A48 /* BaseModel.m in Sources */,
 				987F211D1EDF43A000AA0A48 /* MoreCollectionViewController.m in Sources */,
+				98EE67861EE003EA00FBC9C2 /* RigisterVC.m in Sources */,
 				987F20F51EDF253400AA0A48 /* Manage_RootWindow.m in Sources */,
 				987F20981EDF243A00AA0A48 /* main.m in Sources */,
 				987F21171EDF318900AA0A48 /* MainViewController.m in Sources */,
 				987F211A1EDF417C00AA0A48 /* TableViewController.m in Sources */,
 				987F20F71EDF253400AA0A48 /* BaseCollectionViewCell.m in Sources */,
 				987F21041EDF25CD00AA0A48 /* AppDelegate.m in Sources */,
+				98EE67801EE0033900FBC9C2 /* LunchVC.m in Sources */,
+				98EE67831EE003D600FBC9C2 /* LogVC.m in Sources */,
 				987F20F91EDF253400AA0A48 /* BaseViewController.m in Sources */,
+				98EE67891EE007D100FBC9C2 /* AbsEnterObject.m in Sources */,
 				987F20FA1EDF253400AA0A48 /* TableViewController_Base.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

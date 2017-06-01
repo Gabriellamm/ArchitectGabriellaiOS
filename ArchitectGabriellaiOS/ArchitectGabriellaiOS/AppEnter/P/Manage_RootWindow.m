@@ -44,12 +44,14 @@ static Manage_RootWindow* Instance = nil;
     //第一次运行软件
     // 没有登陆
     // 已经登陆
-NSDictionary *loginStatus =@{@"Login":@"MainViewController",};
+NSDictionary *loginStatus =@{@"Login":@"MainViewController",@"LunchVC":@"LunchVC",@"LogVC":@"LogVC",@"RigisterVC":@"RigisterVC"};
 
 //1、进行判断 并且保存
   _currentLoginStatuc = [[NSUserDefaults standardUserDefaults] objectForKey:CurrentLoginStatuc];
 
     if (_currentLoginStatuc==nil) {
+//测试阶段
+
         [[NSUserDefaults standardUserDefaults] setObject:@"Login" forKey:CurrentLoginStatuc];
         [[NSUserDefaults standardUserDefaults]synchronize];
     }
@@ -58,7 +60,7 @@ NSDictionary *loginStatus =@{@"Login":@"MainViewController",};
     _currentLoginStatuc=[loginStatus objectForKey:_currentLoginStatuc];
 
 
-  id objct            = [[NSClassFromString(@"MainViewController") alloc]init];
+  id objct            = [[NSClassFromString(_currentLoginStatuc) alloc]init];
 
     return objct;
 
