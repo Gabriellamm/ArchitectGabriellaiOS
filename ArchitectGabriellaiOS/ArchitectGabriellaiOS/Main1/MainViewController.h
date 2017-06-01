@@ -12,6 +12,4 @@
 @interface MainViewController : BaseViewController
 
 
-
-+(instancetype)sharedInstance;
 @end

@@ -31,6 +31,7 @@ PODS:
     - MMDrawerController/Core
   - MMDrawerController/Subclass (0.6.0):
     - MMDrawerController/Core
+  - Reveal-SDK (8)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
@@ -45,6 +46,7 @@ DEPENDENCIES:
   - MJExtension
   - MJRefresh
   - MMDrawerController
+  - Reveal-SDK
   - SDWebImage
   - SVProgressHUD
   - ViewDeck
@@ -57,10 +59,11 @@ SPEC CHECKSUMS:
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
+  Reveal-SDK: 43be4e662864e937960d0d04d005135e29c4e53b
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   ViewDeck: 942d90dd23c9f97cc8038be352255378167edcca
 
-PODFILE CHECKSUM: 14e26e5235a8bdf288bda197e16eee8f9851478b
+PODFILE CHECKSUM: b2e96d12584a9368e8dcd1d1e083ebf5a67bc072
 
 COCOAPODS: 1.1.0

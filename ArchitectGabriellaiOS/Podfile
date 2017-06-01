@@ -2,7 +2,7 @@
 # OC
 use_frameworks!
 target 'ArchitectGabriellaiOS' do
-
+pod 'Reveal-SDK', :configurations => ['Debug']
 # pod 'ReactiveObjC'
 pod 'JSONModel'
 pod 'AFNetworking'

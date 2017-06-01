@@ -20,27 +20,6 @@
 
 @implementation MainViewController
 
-//单例模式
-static MainViewController* Instance = nil;
-
-+(instancetype)sharedInstance{
-    static dispatch_once_t once;
-    dispatch_once(&once, ^{
-        Instance = [[MainViewController alloc] init];
-    });
-    return Instance;
-}
-
-//当我们调用alloc时候回调改方法(保证唯一性)
-+(id)allocWithZone:(struct _NSZone *)zone{
-    if(Instance == nil){
-        static dispatch_once_t once;
-        dispatch_once(&once, ^{
-            Instance = [super allocWithZone:zone];
-        });
-    }
-    return Instance;
-}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self unionPay];  

@@ -19,6 +19,8 @@
 		987F20FA1EDF253400AA0A48 /* TableViewController_Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F20D91EDF253400AA0A48 /* TableViewController_Base.m */; };
 		987F21041EDF25CD00AA0A48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F21031EDF25CD00AA0A48 /* AppDelegate.m */; };
 		987F21171EDF318900AA0A48 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F21161EDF318900AA0A48 /* MainViewController.m */; };
+		987F211A1EDF417C00AA0A48 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F21191EDF417C00AA0A48 /* TableViewController.m */; };
+		987F211D1EDF43A000AA0A48 /* MoreCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987F211C1EDF43A000AA0A48 /* MoreCollectionViewController.m */; };
 		C8E34034A9BD65AC1B3B40E6 /* Pods_ArchitectGabriellaiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293AB83FEB1F1E7FF7EAC923 /* Pods_ArchitectGabriellaiOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +75,10 @@
 		987F21141EDF287700AA0A48 /* MapEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapEngine.h; sourceTree = "<group>"; };
 		987F21151EDF318900AA0A48 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		987F21161EDF318900AA0A48 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		987F21181EDF417C00AA0A48 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		987F21191EDF417C00AA0A48 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		987F211B1EDF43A000AA0A48 /* MoreCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCollectionViewController.h; sourceTree = "<group>"; };
+		987F211C1EDF43A000AA0A48 /* MoreCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreCollectionViewController.m; sourceTree = "<group>"; };
 		D30FFBF62EC434AA7C10BD2F /* Pods-ArchitectGabriellaiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectGabriellaiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitectGabriellaiOS/Pods-ArchitectGabriellaiOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -448,6 +454,8 @@
 		987F21061EDF273C00AA0A48 /* Main2 */ = {
 			isa = PBXGroup;
 			children = (
+				987F21181EDF417C00AA0A48 /* TableViewController.h */,
+				987F21191EDF417C00AA0A48 /* TableViewController.m */,
 			);
 			path = Main2;
 			sourceTree = "<group>";
@@ -455,6 +463,8 @@
 		987F21071EDF273C00AA0A48 /* Main3 */ = {
 			isa = PBXGroup;
 			children = (
+				987F211B1EDF43A000AA0A48 /* MoreCollectionViewController.h */,
+				987F211C1EDF43A000AA0A48 /* MoreCollectionViewController.m */,
 			);
 			path = Main3;
 			sourceTree = "<group>";
@@ -721,9 +731,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				987F20F81EDF253400AA0A48 /* BaseModel.m in Sources */,
+				987F211D1EDF43A000AA0A48 /* MoreCollectionViewController.m in Sources */,
 				987F20F51EDF253400AA0A48 /* Manage_RootWindow.m in Sources */,
 				987F20981EDF243A00AA0A48 /* main.m in Sources */,
 				987F21171EDF318900AA0A48 /* MainViewController.m in Sources */,
+				987F211A1EDF417C00AA0A48 /* TableViewController.m in Sources */,
 				987F20F71EDF253400AA0A48 /* BaseCollectionViewCell.m in Sources */,
 				987F21041EDF25CD00AA0A48 /* AppDelegate.m in Sources */,
 				987F20F91EDF253400AA0A48 /* BaseViewController.m in Sources */,
