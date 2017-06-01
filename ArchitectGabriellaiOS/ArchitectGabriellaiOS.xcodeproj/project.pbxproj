@@ -24,7 +24,6 @@
 		98EE67801EE0033900FBC9C2 /* LunchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EE677F1EE0033900FBC9C2 /* LunchVC.m */; };
 		98EE67831EE003D600FBC9C2 /* LogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EE67821EE003D600FBC9C2 /* LogVC.m */; };
 		98EE67861EE003EA00FBC9C2 /* RigisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EE67851EE003EA00FBC9C2 /* RigisterVC.m */; };
-		98EE67891EE007D100FBC9C2 /* AbsEnterObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EE67881EE007D100FBC9C2 /* AbsEnterObject.m */; };
 		C8E34034A9BD65AC1B3B40E6 /* Pods_ArchitectGabriellaiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293AB83FEB1F1E7FF7EAC923 /* Pods_ArchitectGabriellaiOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,8 +88,6 @@
 		98EE67821EE003D600FBC9C2 /* LogVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogVC.m; sourceTree = "<group>"; };
 		98EE67841EE003EA00FBC9C2 /* RigisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RigisterVC.h; sourceTree = "<group>"; };
 		98EE67851EE003EA00FBC9C2 /* RigisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RigisterVC.m; sourceTree = "<group>"; };
-		98EE67871EE007D100FBC9C2 /* AbsEnterObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbsEnterObject.h; sourceTree = "<group>"; };
-		98EE67881EE007D100FBC9C2 /* AbsEnterObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbsEnterObject.m; sourceTree = "<group>"; };
 		D30FFBF62EC434AA7C10BD2F /* Pods-ArchitectGabriellaiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectGabriellaiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitectGabriellaiOS/Pods-ArchitectGabriellaiOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,8 +228,6 @@
 			children = (
 				987F20CC1EDF253400AA0A48 /* Manage_RootWindow.h */,
 				987F20CD1EDF253400AA0A48 /* Manage_RootWindow.m */,
-				98EE67871EE007D100FBC9C2 /* AbsEnterObject.h */,
-				98EE67881EE007D100FBC9C2 /* AbsEnterObject.m */,
 			);
 			path = P;
 			sourceTree = "<group>";
@@ -762,7 +757,6 @@
 				98EE67801EE0033900FBC9C2 /* LunchVC.m in Sources */,
 				98EE67831EE003D600FBC9C2 /* LogVC.m in Sources */,
 				987F20F91EDF253400AA0A48 /* BaseViewController.m in Sources */,
-				98EE67891EE007D100FBC9C2 /* AbsEnterObject.m in Sources */,
 				987F20FA1EDF253400AA0A48 /* TableViewController_Base.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

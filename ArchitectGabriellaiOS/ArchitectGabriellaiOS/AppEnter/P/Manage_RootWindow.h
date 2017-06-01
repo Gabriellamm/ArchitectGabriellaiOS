@@ -20,4 +20,5 @@
 +(instancetype)sharedInstance;
 
 -(UIViewController *)getRootVC;
+-(UIViewController *)resposeEnter;
 @end

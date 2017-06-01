@@ -6,11 +6,12 @@
 //  Copyright © 2017年 Gabriella. All rights reserved.
 //
 
-#define CurrentLoginStatuc @"currentLoginStatuc"
+#define CurrentLoginStatuc @"currentLogin"
 #import "Manage_RootWindow.h"
 
 @interface Manage_RootWindow ()
 @property (nonatomic,copy)NSString *currentLoginStatuc;
+@property (nonatomic,strong)NSDictionary *loginStatus;
 @end
 
 @implementation Manage_RootWindow
@@ -23,6 +24,7 @@ static Manage_RootWindow* Instance = nil;
         static dispatch_once_t once;
         dispatch_once(&once, ^{
             Instance = [[super alloc]init];
+            
         });
     }
     return Instance;
@@ -40,28 +42,45 @@ static Manage_RootWindow* Instance = nil;
 }
 
 
+
+
+
 -(UIViewController *)getRootVC{
     //第一次运行软件
     // 没有登陆
     // 已经登陆
-NSDictionary *loginStatus =@{@"Login":@"MainViewController",@"LunchVC":@"LunchVC",@"LogVC":@"LogVC",@"RigisterVC":@"RigisterVC"};
+NSDictionary *loginStatus =@{@"Main":@"MainViewController",@"Lunch":@"LunchVC",@"Log":@"LogVC"};
 
 //1、进行判断 并且保存
   _currentLoginStatuc = [[NSUserDefaults standardUserDefaults] objectForKey:CurrentLoginStatuc];
 
+
+
     if (_currentLoginStatuc==nil) {
 //测试阶段
 
-        [[NSUserDefaults standardUserDefaults] setObject:@"Login" forKey:CurrentLoginStatuc];
-        [[NSUserDefaults standardUserDefaults]synchronize];
+        [[NSUserDefaults standardUserDefaults] setObject:@"Lunch" forKey:CurrentLoginStatuc];
+//        [[NSUserDefaults standardUserDefaults]synchronize];
     }
 
-  _currentLoginStatuc = [[NSUserDefaults standardUserDefaults] objectForKey:CurrentLoginStatuc];
+    if ([_currentLoginStatuc isEqualToString:@"LunchVC"]) {
+         [[NSUserDefaults standardUserDefaults] setObject:@"Log" forKey:CurrentLoginStatuc];
+    }
+
+    if ([_currentLoginStatuc isEqualToString:@"Log"]) {
+        [[NSUserDefaults standardUserDefaults] setObject:@"Main" forKey:CurrentLoginStatuc];
+    }
+
+[[NSUserDefaults standardUserDefaults]synchronize];
+
+
+    _currentLoginStatuc = [[NSUserDefaults standardUserDefaults] objectForKey:CurrentLoginStatuc];
     _currentLoginStatuc=[loginStatus objectForKey:_currentLoginStatuc];
 
 
   id objct            = [[NSClassFromString(_currentLoginStatuc) alloc]init];
 
+    _currentLoginStatuc =@"";
     return objct;
 
 
